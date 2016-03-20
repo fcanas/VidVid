@@ -10,6 +10,20 @@
 		E771806F1C9CDE54008BE439 /* VidVid.h in Headers */ = {isa = PBXBuildFile; fileRef = E771806E1C9CDE54008BE439 /* VidVid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E77180761C9CDE54008BE439 /* VidVid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E771806B1C9CDE54008BE439 /* VidVid.framework */; };
 		E771807B1C9CDE54008BE439 /* VidVidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E771807A1C9CDE54008BE439 /* VidVidTests.m */; };
+		E771808C1C9CDEBF008BE439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771808B1C9CDEBF008BE439 /* AppDelegate.swift */; };
+		E771808E1C9CDEBF008BE439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771808D1C9CDEBF008BE439 /* ViewController.swift */; };
+		E77180911C9CDEBF008BE439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E771808F1C9CDEBF008BE439 /* Main.storyboard */; };
+		E77180931C9CDEBF008BE439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77180921C9CDEBF008BE439 /* Assets.xcassets */; };
+		E77180961C9CDEBF008BE439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77180941C9CDEBF008BE439 /* LaunchScreen.storyboard */; };
+		E77180A11C9CDEBF008BE439 /* VidVidVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77180A01C9CDEBF008BE439 /* VidVidVideoTests.swift */; };
+		E77180AC1C9CDEBF008BE439 /* VidVidVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77180AB1C9CDEBF008BE439 /* VidVidVideoUITests.swift */; };
+		E77180B81C9CDEE4008BE439 /* VidVid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E771806B1C9CDE54008BE439 /* VidVid.framework */; };
+		E77180B91C9CDEE4008BE439 /* VidVid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E771806B1C9CDE54008BE439 /* VidVid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E77180BE1C9CDF17008BE439 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77180BD1C9CDF17008BE439 /* VideoToolbox.framework */; };
+		E77180C11C9CDFB5008BE439 /* VVDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = E77180BF1C9CDFB5008BE439 /* VVDecoder.h */; };
+		E77180C21C9CDFB5008BE439 /* VVDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E77180C01C9CDFB5008BE439 /* VVDecoder.m */; };
+		E77180C41C9CE267008BE439 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77180C31C9CE267008BE439 /* CoreMedia.framework */; };
+		E77180C61C9CE435008BE439 /* Pen.m4v in Resources */ = {isa = PBXBuildFile; fileRef = E77180C51C9CE435008BE439 /* Pen.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +34,42 @@
 			remoteGlobalIDString = E771806A1C9CDE54008BE439;
 			remoteInfo = VidVid;
 		};
+		E771809D1C9CDEBF008BE439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E77180621C9CDE54008BE439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E77180881C9CDEBF008BE439;
+			remoteInfo = VidVidVideo;
+		};
+		E77180A81C9CDEBF008BE439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E77180621C9CDE54008BE439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E77180881C9CDEBF008BE439;
+			remoteInfo = VidVidVideo;
+		};
+		E77180BA1C9CDEE4008BE439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E77180621C9CDE54008BE439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E771806A1C9CDE54008BE439;
+			remoteInfo = VidVid;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E77180BC1C9CDEE4008BE439 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E77180B91C9CDEE4008BE439 /* VidVid.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E771806B1C9CDE54008BE439 /* VidVid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VidVid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +78,24 @@
 		E77180751C9CDE54008BE439 /* VidVidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VidVidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E771807A1C9CDE54008BE439 /* VidVidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VidVidTests.m; sourceTree = "<group>"; };
 		E771807C1C9CDE54008BE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77180891C9CDEBF008BE439 /* VidVidVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VidVidVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E771808B1C9CDEBF008BE439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E771808D1C9CDEBF008BE439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E77180901C9CDEBF008BE439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E77180921C9CDEBF008BE439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E77180951C9CDEBF008BE439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E77180971C9CDEBF008BE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E771809C1C9CDEBF008BE439 /* VidVidVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VidVidVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E77180A01C9CDEBF008BE439 /* VidVidVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidVidVideoTests.swift; sourceTree = "<group>"; };
+		E77180A21C9CDEBF008BE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77180A71C9CDEBF008BE439 /* VidVidVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VidVidVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E77180AB1C9CDEBF008BE439 /* VidVidVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidVidVideoUITests.swift; sourceTree = "<group>"; };
+		E77180AD1C9CDEBF008BE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77180BD1C9CDF17008BE439 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		E77180BF1C9CDFB5008BE439 /* VVDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDecoder.h; sourceTree = "<group>"; };
+		E77180C01C9CDFB5008BE439 /* VVDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDecoder.m; sourceTree = "<group>"; };
+		E77180C31C9CE267008BE439 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E77180C51C9CE435008BE439 /* Pen.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pen.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E77180C41C9CE267008BE439 /* CoreMedia.framework in Frameworks */,
+				E77180BE1C9CDF17008BE439 /* VideoToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,14 +116,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E77180861C9CDEBF008BE439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77180B81C9CDEE4008BE439 /* VidVid.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77180991C9CDEBF008BE439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77180A41C9CDEBF008BE439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E77180611C9CDE54008BE439 = {
 			isa = PBXGroup;
 			children = (
+				E77180C31C9CE267008BE439 /* CoreMedia.framework */,
+				E77180BD1C9CDF17008BE439 /* VideoToolbox.framework */,
 				E771806D1C9CDE54008BE439 /* VidVid */,
 				E77180791C9CDE54008BE439 /* VidVidTests */,
+				E771808A1C9CDEBF008BE439 /* VidVidVideo */,
+				E771809F1C9CDEBF008BE439 /* VidVidVideoTests */,
+				E77180AA1C9CDEBF008BE439 /* VidVidVideoUITests */,
 				E771806C1C9CDE54008BE439 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +160,9 @@
 			children = (
 				E771806B1C9CDE54008BE439 /* VidVid.framework */,
 				E77180751C9CDE54008BE439 /* VidVidTests.xctest */,
+				E77180891C9CDEBF008BE439 /* VidVidVideo.app */,
+				E771809C1C9CDEBF008BE439 /* VidVidVideoTests.xctest */,
+				E77180A71C9CDEBF008BE439 /* VidVidVideoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +172,8 @@
 			children = (
 				E771806E1C9CDE54008BE439 /* VidVid.h */,
 				E77180701C9CDE54008BE439 /* Info.plist */,
+				E77180BF1C9CDFB5008BE439 /* VVDecoder.h */,
+				E77180C01C9CDFB5008BE439 /* VVDecoder.m */,
 			);
 			path = VidVid;
 			sourceTree = "<group>";
@@ -86,6 +187,38 @@
 			path = VidVidTests;
 			sourceTree = "<group>";
 		};
+		E771808A1C9CDEBF008BE439 /* VidVidVideo */ = {
+			isa = PBXGroup;
+			children = (
+				E77180C51C9CE435008BE439 /* Pen.m4v */,
+				E771808B1C9CDEBF008BE439 /* AppDelegate.swift */,
+				E771808D1C9CDEBF008BE439 /* ViewController.swift */,
+				E771808F1C9CDEBF008BE439 /* Main.storyboard */,
+				E77180921C9CDEBF008BE439 /* Assets.xcassets */,
+				E77180941C9CDEBF008BE439 /* LaunchScreen.storyboard */,
+				E77180971C9CDEBF008BE439 /* Info.plist */,
+			);
+			path = VidVidVideo;
+			sourceTree = "<group>";
+		};
+		E771809F1C9CDEBF008BE439 /* VidVidVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E77180A01C9CDEBF008BE439 /* VidVidVideoTests.swift */,
+				E77180A21C9CDEBF008BE439 /* Info.plist */,
+			);
+			path = VidVidVideoTests;
+			sourceTree = "<group>";
+		};
+		E77180AA1C9CDEBF008BE439 /* VidVidVideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E77180AB1C9CDEBF008BE439 /* VidVidVideoUITests.swift */,
+				E77180AD1C9CDEBF008BE439 /* Info.plist */,
+			);
+			path = VidVidVideoUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E771806F1C9CDE54008BE439 /* VidVid.h in Headers */,
+				E77180C11C9CDFB5008BE439 /* VVDecoder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +270,68 @@
 			productReference = E77180751C9CDE54008BE439 /* VidVidTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E77180881C9CDEBF008BE439 /* VidVidVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E77180AE1C9CDEBF008BE439 /* Build configuration list for PBXNativeTarget "VidVidVideo" */;
+			buildPhases = (
+				E77180851C9CDEBF008BE439 /* Sources */,
+				E77180861C9CDEBF008BE439 /* Frameworks */,
+				E77180871C9CDEBF008BE439 /* Resources */,
+				E77180BC1C9CDEE4008BE439 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E77180BB1C9CDEE4008BE439 /* PBXTargetDependency */,
+			);
+			name = VidVidVideo;
+			productName = VidVidVideo;
+			productReference = E77180891C9CDEBF008BE439 /* VidVidVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E771809B1C9CDEBF008BE439 /* VidVidVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E77180B11C9CDEBF008BE439 /* Build configuration list for PBXNativeTarget "VidVidVideoTests" */;
+			buildPhases = (
+				E77180981C9CDEBF008BE439 /* Sources */,
+				E77180991C9CDEBF008BE439 /* Frameworks */,
+				E771809A1C9CDEBF008BE439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E771809E1C9CDEBF008BE439 /* PBXTargetDependency */,
+			);
+			name = VidVidVideoTests;
+			productName = VidVidVideoTests;
+			productReference = E771809C1C9CDEBF008BE439 /* VidVidVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E77180A61C9CDEBF008BE439 /* VidVidVideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E77180B41C9CDEBF008BE439 /* Build configuration list for PBXNativeTarget "VidVidVideoUITests" */;
+			buildPhases = (
+				E77180A31C9CDEBF008BE439 /* Sources */,
+				E77180A41C9CDEBF008BE439 /* Frameworks */,
+				E77180A51C9CDEBF008BE439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E77180A91C9CDEBF008BE439 /* PBXTargetDependency */,
+			);
+			name = VidVidVideoUITests;
+			productName = VidVidVideoUITests;
+			productReference = E77180A71C9CDEBF008BE439 /* VidVidVideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E77180621C9CDE54008BE439 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Fabián Cañas";
 				TargetAttributes = {
@@ -151,6 +341,17 @@
 					E77180741C9CDE54008BE439 = {
 						CreatedOnToolsVersion = 7.3;
 					};
+					E77180881C9CDEBF008BE439 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E771809B1C9CDEBF008BE439 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E77180881C9CDEBF008BE439;
+					};
+					E77180A61C9CDEBF008BE439 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E77180881C9CDEBF008BE439;
+					};
 				};
 			};
 			buildConfigurationList = E77180651C9CDE54008BE439 /* Build configuration list for PBXProject "VidVid" */;
@@ -159,6 +360,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E77180611C9CDE54008BE439;
 			productRefGroup = E771806C1C9CDE54008BE439 /* Products */;
@@ -167,6 +369,9 @@
 			targets = (
 				E771806A1C9CDE54008BE439 /* VidVid */,
 				E77180741C9CDE54008BE439 /* VidVidTests */,
+				E77180881C9CDEBF008BE439 /* VidVidVideo */,
+				E771809B1C9CDEBF008BE439 /* VidVidVideoTests */,
+				E77180A61C9CDEBF008BE439 /* VidVidVideoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +391,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E77180871C9CDEBF008BE439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77180961C9CDEBF008BE439 /* LaunchScreen.storyboard in Resources */,
+				E77180931C9CDEBF008BE439 /* Assets.xcassets in Resources */,
+				E77180C61C9CE435008BE439 /* Pen.m4v in Resources */,
+				E77180911C9CDEBF008BE439 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E771809A1C9CDEBF008BE439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77180A51C9CDEBF008BE439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -193,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E77180C21C9CDFB5008BE439 /* VVDecoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +435,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E77180851C9CDEBF008BE439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E771808E1C9CDEBF008BE439 /* ViewController.swift in Sources */,
+				E771808C1C9CDEBF008BE439 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77180981C9CDEBF008BE439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77180A11C9CDEBF008BE439 /* VidVidVideoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77180A31C9CDEBF008BE439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77180AC1C9CDEBF008BE439 /* VidVidVideoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -212,7 +468,41 @@
 			target = E771806A1C9CDE54008BE439 /* VidVid */;
 			targetProxy = E77180771C9CDE54008BE439 /* PBXContainerItemProxy */;
 		};
+		E771809E1C9CDEBF008BE439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E77180881C9CDEBF008BE439 /* VidVidVideo */;
+			targetProxy = E771809D1C9CDEBF008BE439 /* PBXContainerItemProxy */;
+		};
+		E77180A91C9CDEBF008BE439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E77180881C9CDEBF008BE439 /* VidVidVideo */;
+			targetProxy = E77180A81C9CDEBF008BE439 /* PBXContainerItemProxy */;
+		};
+		E77180BB1C9CDEE4008BE439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E771806A1C9CDE54008BE439 /* VidVid */;
+			targetProxy = E77180BA1C9CDEE4008BE439 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E771808F1C9CDEBF008BE439 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E77180901C9CDEBF008BE439 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E77180941C9CDEBF008BE439 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E77180951C9CDEBF008BE439 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E771807D1C9CDE54008BE439 /* Debug */ = {
@@ -357,6 +647,75 @@
 			};
 			name = Release;
 		};
+		E77180AF1C9CDEBF008BE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VidVidVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.VidVidVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E77180B01C9CDEBF008BE439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VidVidVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.VidVidVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E77180B21C9CDEBF008BE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VidVidVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.VidVidVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VidVidVideo.app/VidVidVideo";
+			};
+			name = Debug;
+		};
+		E77180B31C9CDEBF008BE439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VidVidVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.VidVidVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VidVidVideo.app/VidVidVideo";
+			};
+			name = Release;
+		};
+		E77180B51C9CDEBF008BE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VidVidVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.VidVidVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VidVidVideo;
+			};
+			name = Debug;
+		};
+		E77180B61C9CDEBF008BE439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VidVidVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.VidVidVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VidVidVideo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -382,6 +741,30 @@
 			buildConfigurations = (
 				E77180831C9CDE54008BE439 /* Debug */,
 				E77180841C9CDE54008BE439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E77180AE1C9CDEBF008BE439 /* Build configuration list for PBXNativeTarget "VidVidVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E77180AF1C9CDEBF008BE439 /* Debug */,
+				E77180B01C9CDEBF008BE439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E77180B11C9CDEBF008BE439 /* Build configuration list for PBXNativeTarget "VidVidVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E77180B21C9CDEBF008BE439 /* Debug */,
+				E77180B31C9CDEBF008BE439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E77180B41C9CDEBF008BE439 /* Build configuration list for PBXNativeTarget "VidVidVideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E77180B51C9CDEBF008BE439 /* Debug */,
+				E77180B61C9CDEBF008BE439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
